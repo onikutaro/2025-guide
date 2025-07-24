@@ -1,0 +1,344 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rounded+Mplus+1c:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    background-color: transparent;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+  font-family: 'Jaro', sans-serif;
+}
+
+html {
+    font-family: "Inconsolata", monospace;
+}
+
+header {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+    margin: 4% 2% 0 2%;
+}
+.site-title {
+    color: #000;
+    font-family: 'Rounded Mplus 1c', sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.menu-button {
+    width: 60px;
+    height: 60px; 
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-button img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.container {
+    margin: 0 10%;
+    align-items: center;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+.first-img {
+    width: 100vw;
+    margin: calc(50% - 50vw);
+    margin-top: 50px;
+    margin-bottom: 100px;
+    position: relative;
+    font-family: 'Rounded Mplus 1c', sans-serif;
+}
+
+.first-img img {
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.first-img-text {
+    position: absolute;
+    right: 24px;
+    bottom: 24px;
+    color: #3890d8;
+    font-size: 2rem;
+    padding: 8px 16px;        
+    border-radius: 8px;       
+    z-index: 2;
+}
+
+.divider-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 32px;
+}
+
+.divider-text .label {
+    margin-bottom: 0;
+    font-size: 18px;
+    color: #000;
+}
+
+.divider-text .line {
+    width: 100%;
+    height: 1px;
+    background: #000;
+    margin-top: 0;
+}
+
+.item-images {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    margin: 32px 0;
+}
+
+
+
+/* pan1 */
+.item-img-pan {
+    width: 300;
+    height: auto;
+    transition: 0.3s;
+}
+.item-img-pan:hover {
+    content: url("img/pan2.png");
+    width: 300;
+    height: auto;
+    transition: 0.3s;
+}
+
+/* malet1 */
+.item-img-malet {
+    width: 140px;
+    height: auto;
+    transition: 0.3s;
+}
+.item-img-malet:hover {
+    content: url("img/malet2.png");
+     width: 140px;
+    height: auto;
+    transition: 0.3s;
+}
+
+/* stand1 */
+.item-img-stand {
+    width: 300px;
+    height: auto;
+    transition: 0.3s;
+}
+.item-img-stand:hover {
+    content: url("img/stand3.png");
+    width: 300px;
+    height: auto;
+    transition: 0.3s;
+}
+
+.item-caption {
+    text-align: center;
+    margin-top: 12px;
+    font-size: 1.1rem;
+    color: #333;
+    font-family: 'Rounded Mplus 1c', sans-serif;
+    line-height: 1.1;
+}
+
+.scalenohanasi {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 32px;
+}
+
+.scalenohanasi .label {
+    margin-bottom: 0;
+    font-size: 18px;
+    color: #000;
+}
+
+.scalenohanasi .line {
+    width: 100%;
+    height: 1px;
+    background: #000;
+    margin-top: 0;
+}
+
+.scale-imgs {
+  width: 100vw;
+  margin: 0 calc(50% - 50vw);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+}
+
+
+.class-text {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 32px;
+}
+
+.class-text .class-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.scale-text1 {
+           margin-top: 12px;
+    font-size: 1.2rem;
+    color: #333;
+    font-family: 'Rounded Mplus 1c', sans-serif;
+    line-height: 1;
+}
+
+.scale-text2 {
+           margin-top: 12px;
+    font-size: 1.2rem;
+    color: #333;
+    font-family: 'Rounded Mplus 1c', sans-serif;
+    line-height: 1;
+}
+
+.scale-text3 {
+           margin-top: 12px;
+    font-size: 1.2rem;
+    color: #333;
+    font-family: 'Rounded Mplus 1c', sans-serif;
+    line-height: 1;
+}
+
+
+.scale-imgs img {
+width: 75%;
+}
+.scale-imgs2 img {
+  width: 65%;
+}
+
+.scale-imgs2 {
+  width: 100vw;
+  margin: 0 calc(50% - 50vw);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.class-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 32px;
+    font-family: 'Rounded Mplus 1c', sans-serif;
+}
+
+.class-text .label {
+    margin-bottom: 0;
+    font-size: 18px;
+    color: #000;
+}
+
+.class-text .line {
+    width: 100%;
+    height: 1px;
+    background: #000;
+    margin-top: 0;
+}
+
+.class1-1 {
+        margin-top: 12px;
+    font-size: 1.8rem;
+    color: #333;
+    font-family: 'Rounded Mplus 1c', sans-serif;
+    line-height: 1;
+}
+
+.class1-2 {
+        margin-top: 12px;
+    font-size: 1.2rem;
+    color: #333;
+    font-family: 'Rounded Mplus 1c', sans-serif;
+    line-height: 1;
+}
+
+.class1-3 {
+        margin-top: 12px;
+    font-size: 1.2rem;
+    color: #333;
+    font-family: 'Rounded Mplus 1c', sans-serif;
+    line-height: 1;
+}
+
+.class2-1 {
+        margin-top: 12px;
+    font-size: 1.8rem;
+    color: #333;
+    font-family: 'Rounded Mplus 1c', sans-serif;
+    line-height: 1;
+}
+
+.class2-2 {
+        margin-top: 12px;
+    font-size: 1.2rem;
+    color: #333;
+    font-family: 'Rounded Mplus 1c', sans-serif;
+    line-height: 1;
+}
+
+.class2-3 {
+        margin-top: 12px;
+    font-size: 1.2rem;
+    color: #333;
+    font-family: 'Rounded Mplus 1c', sans-serif;
+    line-height: 1;
+}
+
+.class3-1 {
+        margin-top: 12px;
+    font-size: 1.8rem;
+    color: #333;
+    font-family: 'Rounded Mplus 1c', sans-serif;
+    line-height: 1;
+}
+
+.class3-2 {
+        margin-top: 12px;
+    font-size: 1.2rem;
+    color: #333;
+    font-family: 'Rounded Mplus 1c', sans-serif;
+    line-height: 1;
+}
+
+.class3-3 {
+        margin-top: 12px;
+    font-size: 1.2rem;
+    color: #333;
+    font-family: 'Rounded Mplus 1c', sans-serif;
+    line-height: 1;
+}
+
+
+
+
