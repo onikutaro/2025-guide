@@ -79,7 +79,7 @@ header {
     position: absolute;
     right: 24px;
     bottom: 24px;
-    color: #3890d8;
+    color: #ffffff;
     font-size: 2rem;
     padding: 8px 16px;        
     border-radius: 8px;       
@@ -339,6 +339,32 @@ width: 75%;
     line-height: 1;
 }
 
+.fotter {
+  width: 100vw; /* 画面幅いっぱい */
+  height: 175px;
+  background: var(--b, #5C8AD5);
+}
 
 
+/* スライド画像の初期状態（非表示） */
+.slide-image {
+  position: fixed;
+  top: 0;
+  left: -300px; /* 完全に左に隠しておく */
+  width: 300px;
+  height: auto;
+  z-index: 1000;
+  transition: left 0.4s ease;
+}
+
+/* 表示状態 */
+.slide-image.open {
+  left: 0;
+}
+
+.slide-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
 
