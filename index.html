@@ -15,7 +15,16 @@
     <!-- css -->
     <link rel="stylesheet" href="./css/style.css" />
 
-    <script></script>
+    <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const menuButton = document.querySelector(".menu-button");
+    const slideImage = document.querySelector(".slide-image");
+
+    menuButton.addEventListener("click", function () {
+      slideImage.classList.toggle("open");
+    });
+  });
+</script>
 
 </head>
 
@@ -29,11 +38,16 @@
         </div>
     </header>
 
+    <!-- スライド画像 -->
+<div class="slide-image">
+  <img src="img/menu.png" alt="メニュー画像">
+</div>
+
     <div class="container">
 
         <!-- ファーストビュー -->
        <div class="first-img">
-    <img src="img/tobago.png" alt="ファーストビュー画像">
+    <img src="img/Rectangle 1.png" alt="ファーストビュー画像">
     <div class="first-img-text">スティールパンは、カリブ<ruby>海<rt>かい</rt></ruby>に<ruby>位置<rt>いち<rt></ruby>する
 トリニダード・トバゴで<ruby>生<rt>う<rt></ruby>まれました。
 
@@ -59,8 +73,8 @@
 </div>
 
 <div class="item-caption">
-  <br>演奏するのに</br>
-<br>必要なアイテムは</br>
+  <br><ruby>演奏<rt>えんそう</rt></ruby>するのに</br>
+<br><ruby>必要<rt>ひつよう</rt></ruby>なアイテムは</br>
 <br>３つ！</br>
 </div>
 
@@ -115,7 +129,10 @@ STEELPAN SCHOOL</div>
   </div>
 </div>
 
+<div class="fotter">
 
+    
+</div>
 
 </body>
 
